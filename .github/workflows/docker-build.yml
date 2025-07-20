@@ -38,7 +38,7 @@ jobs:
         run: docker build -t flask-devops .
 
       - name: Tag Docker image
-        run: docker tag flask-devops your-dockerhub/flask-devops:latest
+        run: docker tag flask-devops pradeev812/flask-devops:latest
 
       - name: Push Docker image to DockerHub
-        run: docker push your-dockerhub/flask-devops:latest
+        run: docker push pradeev812/flask-devops:latest
